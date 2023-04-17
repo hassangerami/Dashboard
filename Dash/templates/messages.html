@@ -1,0 +1,12 @@
+{% load static %}
+
+{% block static_link %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% if messages %}
+    {% for msg in messages %}
+        <p>{{ msg }}</p>
+    {% endfor %}
+{% endif %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Sign in {% endblock %}
+
+{% block static_link %}
+    <link rel="stylesheet" href="{% static 'accounts/accounts.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="main-form-area">
+        <div class="container">
+            <form action="" method="post" novalidate>
+                {% csrf_token %}
+                {{ form.as_p }} <br>
+                <input type="submit" value="sign in" id="button">
+            </form>
+        </div><br><br>
+        <p>new an account?</p><br>
+        <a href="{% url 'accounts:user_signup' %}">sign up</a>
+    </div>
+{% endblock %}

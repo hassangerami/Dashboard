@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    background-color: #157f84;
+    font-family: 'Shanti', sans-serif;
+}
+
+
+#main-form-area {
+    background-color: #157f84;
+    margin: 5% 33%;
+    padding: 10%;
+    border: 2px solid #157f84;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: #062A2E 0px 3px 25px 0px;
+}
+
+
+.container {
+    width:  200px;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+
+#button {
+    width: 150px;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#button:hover {
+    background-color: #B74171;
+    box-shadow: #062A2E 0px 5px 15px;
+}

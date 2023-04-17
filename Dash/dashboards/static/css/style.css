@@ -1,0 +1,72 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+#forms {
+    margin: 5% 30%;
+    width: 10%;
+}
+
+
+.container {
+    margin-left: 3%;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container button {
+    padding: 1%;
+    width: 150px;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    color: white;
+}
+
+
+.container button:hover {
+    background-color: steelblue;
+}
+
+.read {
+    margin-left: 40%;
+    width: 10%;
+    border: 1% solid rgb(56, 216, 35);
+}
+
+
+.button {
+    width: 200px;
+    color: rgb(3, 3, 44);
+    padding: 5;
+    border: 1px solid silver;
+    background-color: silver;
+
+}
+
+.button:hover {
+    background-color: rgb(236, 24, 66);
+    box-shadow: rgb(94, 29, 42) 0px 5px 15px;
+}
+
+
+#signout {
+    text-decoration: none;
+}
+
+#signout button {
+    padding: 1%;
+    width: 10%;
+    margin: 1% 3%;
+    border: 1px solid #40aab6;
+    border-radius: 2rem;
+    background-color: #40aab6;
+    color: white;
+}
+
+
+#signout button:hover {
+    background-color: #064249;
+}

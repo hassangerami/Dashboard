@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Edit information {% endblock %}
+
+
+{% block static_link %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block content  %}
+    <div id="forms">
+        <form action="" method="post" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="send" class="button">
+        </form>
+    </div>
+{% endblock %}

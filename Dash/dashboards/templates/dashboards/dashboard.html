@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Dashboard {% endblock %}
+
+
+{% block static_link %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div id="signout">
+        <a href="{% url 'accounts:user_signout' %}" id="signup">
+            <button>Sign Out</button>
+        </a>
+    </div>
+    <br><br>
+    <div class="container">
+        <a href="{% url 'dashboards:user_info' %}">
+            <button>Edit information</button>
+        </a>
+        <br>
+        <a href="{% url 'dashboards:user_ticket' %}">
+            <button>Ticket</button>
+        </a>
+    </div>
+
+    {%for read in reads  %}
+        <div class="read">
+            <p>{{ read.first_name }} {{ read.last_name }}</p>
+            <p>{{ read.address }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}
